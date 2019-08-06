@@ -1,0 +1,60 @@
+nav a {
+    color: blue;
+}
+
+table {
+   background-image: url("../images/k.png");
+   background-size: 100% 100%;
+   opacity: .90;
+}
+
+form button {
+    margin-left: 80%
+}
+
+body {
+    background-image: url("../images/goku-background.jpg");
+    background-size: cover;
+    font-family: Montserrat, monospace;
+    background-attachment: fixed;
+    font-weight: bolder;
+    color: black;
+}
+
+.video-background {
+
+    background-image: url("../images/gt.jpg");
+    background-size: cover;
+}
+
+#blog {
+    background: cornsilk;
+    opacity: .7;
+    color: black;
+    width: 100%;
+    word-wrap: break-word;
+    border: thin black solid;
+}
+
+#banner {
+    background-image: url("../images/banner.png");
+    background-size: cover;
+    background-attachment: no-repeat;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 0px;
+    color: red;
+}
+
+#introduction {
+    color: black;
+}
+
+th,
+td {
+    color: white;
+}
+
+a:hover {
+    color: red;
+}

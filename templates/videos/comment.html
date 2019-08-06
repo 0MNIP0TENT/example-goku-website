@@ -1,0 +1,7 @@
+{% extends '_base.html' %}{% block content %}{% load staticfiles %}{% load crispy_forms_tags %} 
+<form enctype="multipart/form-data" method="post" >
+  {% csrf_token %}
+  {{ form | crispy }}
+  <input type="submit" value="comment" class="btn btn-dark">
+</form>
+{% endblock content %}

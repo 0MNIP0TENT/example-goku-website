@@ -1,0 +1,42 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block title %}Home page{% endblock title %}
+{% block content %}
+<h1 style="text-align: center">The Lengendary Super Sayian Goku</h1>
+  <p id="introduction">Goku throughout his life journey has aquired abilites that make him an insanely unique warrior.</p>
+
+<div class="container">
+  <table class="table table-border" />
+
+    <tr>
+      <td style="text-align: center">Abilities</td>
+      <td style="text-align: center">Proof</td>
+    </tr>
+
+    <tr>
+      <td>Bring dead back to life</td>
+      <td><a href="{% url 'gokuvscooler' %}" target="_self"> Goku vs Cooler</a></td>
+    </tr>
+
+    <tr>
+      <td>Destroy gigantic planets</td>
+      </tr>
+
+    <tr>
+      <td>Has the power of nauture inside him</td>
+    </tr>
+
+    <tr>	
+      <td>Can feel your movements by the settle vibrations in the air</td>
+      <td><a href="{% url 'gokuvsyakon' %}" target="_self">Goku vs Yakon</a>
+      </td>
+   </tr>
+
+   <tr>
+     <td>Can Read minds</td>
+   </tr>
+
+  </table>
+</div>
+{% endblock content %}
+

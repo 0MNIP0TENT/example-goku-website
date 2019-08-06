@@ -1,0 +1,23 @@
+{%extends "_base.html"%} {%block content%} {% load staticfiles %}
+<body class="video-background">
+<h1 style="text-align: center">
+    The LEGENDARY SUPER SAYIAN GOKU
+</h1>
+{% for video in object_list %}
+ <br />
+ <br /> <div class="container">
+ <div class="card-body text-white bg-dark">
+     <div class="card-title"><h3>{{ video.name }}</h3><p>Posted by: {{ video.author }}</p><a href="{% url 'comment' pk=video.pk %}">comment</a></div>
+      <video width=100% controls>
+        <source src="{{ video.videofile.url }}" type="video/webm">
+      </video>
+      {% for comment in video.Comments.all %}
+      <div class="card-footer">{{ comment.author }} says {{ comment }}</div>
+     {% endfor %}    
+{% endfor %}
+    </div>
+</div>
+ <br/>
+ <br/>
+</body>
+{% endblock content %}
